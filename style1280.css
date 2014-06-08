@@ -1,0 +1,423 @@
+* { margin: 0; padding: 0; }
+
+/* ---------------- GENERAL CSS ---------------- */
+
+/* RESPONSYWNY FONT MO¯NA UZYSKAÆ TYLKO POPRZEZ VIEWPORTY LUB MEDIA QUERIES */
+
+html {
+	height: 100%;
+	
+}
+
+body { 
+    font-family:   Century Gothic, Trebuchet MS, Helvetica, Arial, sans-serif;
+    color: #fff;
+    font-size: 150%; /* 100% = 16px = 12pt = 1em */	
+	text-shadow: black  0.1em 0.1em 0.1em;
+    background: grey;/* background of last page, minimum background width: 1920px */
+	background-size: cover; /* background fills browser window */
+	background-attachment: fixed; /* background doesnt move */
+  	margin: 0 auto;
+	height: 100%;
+	
+	
+	
+}
+
+@font-face {
+  font-family: 'Century Gothic';
+  src: url('font/GOTHIC.eot'); /* IE9 Compat Modes */
+  src: url('font/GOTHIC.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('font/GOTHIC.woff') format('woff'), /* Modern Browsers */
+       url('font/GOTHIC.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('font/GOTHIC.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+  font-family: 'Century Gothic';
+  src: url('font/GOTHICB.eot'); /* IE9 Compat Modes */
+  src: url('font/GOTHICB.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('font/GOTHICB.woff') format('woff'), /* Modern Browsers */
+       url('font/GOTHICB.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('font/GOTHICB.svg#svgFontName') format('svg'); /* Legacy iOS */
+	font-weight: bold;
+}
+
+@font-face {
+  font-family: 'Century Gothic';
+  src: url('font/GOTHICI.eot'); /* IE9 Compat Modes */
+  src: url('font/GOTHICI.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('font/GOTHICI.woff') format('woff'), /* Modern Browsers */
+       url('font/GOTHICI.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('font/GOTHICI.svg#svgFontName') format('svg'); /* Legacy iOS */
+	font-style: italic;
+}
+
+#wrapper {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+#one { /* first page */
+	position: fixed;
+	display: block;
+	width: 100%;
+	height: 100%;
+	background: url(img/tlo1.jpg) no-repeat bottom center; 
+	background-size: cover; 
+	background-attachment: local;
+  	margin: 0 auto;
+	float: left;
+	
+	
+}
+#two { /* second page */
+	position: relative;
+	width: 100%;
+	height: 100%;
+    background: url(img/mapa.svg) white no-repeat center center;
+	background-size: contain;
+	background-attachment: local;
+  	clear: both;
+	display: block; 
+	box-shadow: 0.1em 2em 2em 2em black;
+	-moz-box-shadow: 0.1em 2em 2em 2em black;
+	-webkit-box-shadow: 0.1em 2em 2em 2em black;
+}
+	
+#three { /* third page */
+	
+	position: relative;
+	width: 100%;
+	height: 100%;
+	background: url(img/chiny1280.jpg) grey no-repeat bottom center;
+    background-size: cover; 
+	background-attachment: local; 
+  	clear: both;
+	display: block;
+	
+	
+}
+
+#summary {
+	display: block;
+	width: 100%;
+	height: 100%;
+	background: url(img/portugalia.jpg) grey no-repeat top center; 
+	background-size: cover; 
+	background-attachment: local;
+  	margin: 0 auto;
+	float: left;
+}
+
+ul{
+	list-style: none; /* ewentualnie baloniki global citizen */
+}
+
+li:before { /* shadowed bullet points */
+  content: '\2022'; /* bullet point code */
+  padding: 1%;
+
+}
+a{ 
+	color: #fff;
+	text-decoration: none;
+}
+
+a:hover{ 
+	text-decoration: underline;
+}
+#preload {
+
+	display: none;
+}
+/* ---------------- CONTENT ----------------- */
+
+#title-one { 
+	
+	margin-left: 40%;
+	margin-right: 2%;
+	padding-top: 10%;
+	margin-bottom: 5%;
+	
+
+}
+
+h1 { 
+	font-size: 300%; /* zmieniaæ w media queries */
+	font-size: 4.5vw;
+	font-weight: bold;
+}
+
+.text-one {
+	
+	width: 30%;
+	float: right;
+	clear: both;
+	font-size: 150%; /* zmieniaæ w media queries */
+	font-size: 1.5vw;
+	margin-right: 2%;
+	margin-bottom: 2%;
+
+}
+
+
+.list-one {
+	font-size: 150%; /* zmieniaæ w media queries */
+	font-size: 1.5vw;
+	width: 30%;
+	float: right;
+	clear: both;
+	margin-right: 0;
+	margin-bottom: 2%;
+
+}
+
+.more-one {
+	font-size: 150%; /* zmieniaæ w media queries */
+	font-size: 1.5vw;
+	font-style: italic;
+	float: right;
+	clear: both;
+	margin-right: 5%;
+	margin-bottom: 2%;
+
+}
+
+.input {  /* first page input text fields */
+
+	min-width: 50%;
+	min-height: 2em; 
+	border: 1px solid #999999; 
+	padding: 0.2em;
+	background-color:rgba(255, 255, 255, 0.8);
+	
+}	
+
+.input:focus {
+	outline: none;
+    border-color: #9ecaed;
+    box-shadow: 0 0 10px #9ecaed;
+}
+
+#go {
+	position: relative;
+	background: url(img/strzalka.png) no-repeat center center;
+	background-size: contain;
+	height: 3em;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 30%;
+	clear: both;
+	width: 100%;
+	float: right;
+	}
+	
+#go:hover {
+	background: url(img/strzalka2.png) no-repeat center center;
+	background-size: contain;
+}
+
+#sign-one { /* Joanna Dymara, Filipiny */
+	position: absolute;
+	float: left;
+	left: 2%;
+	bottom: 2%;
+	font-size: 200%; /* zmieniaæ w media queries */
+	font-size: 2vw;
+	color: black;
+	text-shadow: none;
+}
+
+
+/* ------------------- BEGINNING OF SECOND PAGE ------------------ */
+
+#sign-two { /* Anna Styczeñ, Sri Lanka */
+	position: absolute;
+	float: left;
+	left: 2%;
+	top: 2%;
+	font-size: 150%; /* zmieniaæ w media queries */
+	font-size: 1.5vw;
+	color: #000;
+	text-shadow: none;
+	
+
+}
+#title-two { 
+	width: 35%;
+	margin-left: 5%;
+	margin-right: 2%;
+	padding-top: 15%;
+	margin-bottom: 0%;
+	color: #000;
+	text-shadow: white  0.1em 0.1em 0.1em;
+	
+}
+/* ------------------- BEGINNING OF THIRD PAGE ------------------ */
+
+#title-three { 
+	
+	
+	
+	margin-left: 5%;
+	margin-right: 2%;
+	padding-top: 5%;
+	margin-bottom: 0%;
+	}
+	
+	
+}
+
+h2 { 
+	font-size: 200%; /* zmieniaæ w media queries */
+	font-size: 3vw;
+	font-weight: bold;
+}
+.text-three {
+	font-size: 150%; /* zmieniaæ w media queries */
+	font-size: 1.5vw;
+	width: 40%;
+	float: left;
+	margin-top: 7%;
+	margin-left: 5%;
+	
+
+	
+}
+
+.input3 {  /* third page input text fields */
+	max-width: 100%;
+	min-width: 100%;
+	min-height: 2em; 
+	border: 1px solid #999999; 
+	padding: 0.2em;
+	background-color:rgba(255, 255, 255, 0.8);
+	
+}	
+
+.input3:focus {
+	outline: none;
+    border-color: #9ecaed;
+    box-shadow: 0 0 10px #9ecaed;
+}
+
+table {
+	min-width: 100%;
+}
+
+.send {
+	background: url(img/dalej.png) no-repeat center center;
+	background-size: contain;
+	width: 100%;
+	display: block;
+	font-weight: bold;
+	float: left;
+	clear: both;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 300%; /* zmieniaæ w media queries */
+	font-size: 3vw;
+	text-shadow: black 0.1em 0.1em 0.1em;
+	color: red;
+	height: 2em;
+	border: none;
+	margin-top: 4%;
+	margin-bottom: 5%;
+	
+	}
+
+.send:hover {
+	cursor: pointer;
+	background: url(img/dalej2.png) no-repeat center center;
+	background-size: contain;
+	
+}
+
+.send:active {
+	outline: none;
+	background: url(img/dalej3.png) no-repeat center center;
+	background-size: contain;
+}
+
+#logo-globalcitizen {
+	
+	background: url(img/logo-globalcitizen-biale.png) no-repeat center;
+	background-size: contain;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	clear: both;
+	float: left;
+	width: 100%;
+	height: 5em;
+	margin-top: 5%;
+	
+}
+
+
+
+#form { /* apply form positioning */
+	width: 30%;
+	text-align: center;
+	display: inline;
+	float: right;
+	font-size: 160%; /* zmieniaæ w media queries */
+	font-size: 1.6vw;
+	margin-top: 15%;
+	margin-right: 0%;
+	white-space: nowrap; /* dont break line */
+	
+	
+}
+
+
+
+#sign-quote {
+	position: relative;
+	font-size: 150%; /* zmieniaæ w media queries */
+	font-size: 1.5vw;
+	float: right;
+	padding-right: 15%;
+	
+}
+#sign-three { /* Aleksandra Grzesiak, Chiny */
+	position: absolute;
+	display: block;
+	float: left;
+	left: 2%;
+	bottom: 2%;
+	font-size: 150%; /* zmieniaæ w media queries */
+	font-size: 1.5vw;
+	color: #fff;
+	text-shadow: none;
+	
+}
+
+/* ------------ SUMMARY ---------------- */
+
+#title-summary {
+	
+	margin-left: 10%;
+	
+	padding-top: 10%;
+	
+	
+	
+}
+
+
+#text-summary {
+	position: relative;
+	font-size: 1.5em; /* zmieniaæ w media queries */
+	font-size: 1.5vw;
+	width: 40%;
+	float: left;
+	margin-top: 5%;
+	margin-left: 10%;
+	
+
+	
+}
