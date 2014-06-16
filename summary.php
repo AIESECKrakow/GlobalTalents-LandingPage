@@ -12,16 +12,6 @@
 		<link rel="stylesheet" href="style.css" type="text/css" />				
 		<!-- <link rel="stylesheet" media="screen and (min-height: 900px) and (max-width: 1280px)" href="style1280.css" />		-->
 		
-			
-		<script type="text/javascript">	
-						$(document).ready(function() {
-						
-							mixpanel.track("Rejestracja w systemie (manual code)");
-						
-
-						}); 
-				
-					</script>	
 	</head>
 	
 	<body>
@@ -75,6 +65,7 @@ $surname = $_POST["surname"];
 $email2 = $_POST["email"];
 $email = str_replace("@", "%40", $email);
 $password = $_POST["password"];
+$lc = $_POST["lc"];
 
 
 
@@ -82,7 +73,7 @@ $password = $_POST["password"];
    $ $wpcpost2 = mysql_query("SELECT * FROM `mp_landing_gt` WHERE mail='$email'")
 or die('Strona nie istnieje');
 if(mysql_num_rows($wpcpost2) > 0) { } else {
-mysql_query("INSERT INTO mp_landing_gt (name, surname, mail, date) VALUES ('$name', '$surname', '$email2' , '$date')");
+mysql_query("INSERT INTO mp_landing_gt (name, surname, mail, date, lc) VALUES ('$name', '$surname', '$email2' , '$date', '$lc')");
 
 }
 

@@ -4,6 +4,8 @@ Global Talents to międzynarodowy program wymiany praktyk zawodowych prowadzony 
 
 Jest to projekt krakowskiego landing page dla programu Global Talents.
 
+Adres: http://aiesec.pl/globaltalents/
+
 Plan projektu:
 - stworzyć dobrze konwertującą stronę
 - aktualizować ją na bieżąco
