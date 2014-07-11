@@ -1,0 +1,212 @@
+// Main structure
+
+.section {
+    padding: 2% 5%;
+   	@media (min-width: @screen-sm-min) {
+   	    padding: 2% 10%;
+   	}
+   
+}
+
+
+.program {
+    margin-bottom: 1em;
+	img {
+	    display: block;
+	    margin: 0 auto;
+	    width: 40%;
+	    @media (min-width: @screen-sm-min) {
+	        width: 20%;
+	    }
+	}
+	h3 {
+	    text-align: center;
+	}
+}
+
+#co-mozesz-zyskac {
+    #earth_flat_icon {
+        display: none;
+        @media (min-width: @screen-md-min) {
+            display: initial;
+        }
+    }
+    img {
+        display: none;
+        @media (min-width: @screen-md-min) {
+            display: block;
+            margin: auto;
+        }
+    }
+    li { // kolorowe bullet pointy tylko dla duzych ekranow
+        @media (min-width: @screen-md-min) {
+            list-style: none;
+        
+        }
+        
+        &:before {
+        @media (min-width: @screen-md-min) {
+        content: url(../img/bullet_blue.png);
+        padding: 1em;
+        line-height: 2em;
+        position: relative;
+        top: 0.5em;
+        }
+        }
+        
+        &.indent {
+        @media (min-width: @screen-md-min) {
+            padding-left: 5em;
+        }
+        }
+    
+    }
+}
+
+#jak-to-dziala {
+    h4 {
+        color: @blue;
+    }
+    li { // bullet pointy tylko dla duzych ekranow
+        @media (min-width: @screen-md-min) {
+        padding-left: 2em;
+        padding-right: 8em;
+        
+        }
+        
+        &:before {
+        @media (min-width: @screen-md-min) {
+        content: url(../img/bullet_pin.png);
+        position: absolute;
+        top: 2em;
+        left: -1em;
+       
+        }
+        }
+        
+        &.indent {
+        @media (min-width: @screen-md-min) {
+            padding-left: 5em;
+        }
+        }
+        
+        .krok {
+        visibility: hidden;
+        display: none;
+        @media (min-width: @screen-md-min) {
+        visibility: visible;
+        display: block;
+        height: 4em;
+        width: 4em;
+        position: absolute;
+        top: 2em;
+        right: 3em;
+        }
+        }
+    }
+}
+
+
+.mozliwosci-background {
+    @media (min-width: @screen-sm-min) {
+        background: url(../img/seattle.jpg) no-repeat top center;
+        background-size: cover;
+    }
+}
+
+#mozliwosci {
+    display: block;
+    color: @white;
+    background: @gray-dark;
+     @media (min-width: @screen-sm-min) {
+         background: rgba(0,0,0,0.7);
+     }
+
+   #chart_div {
+       visibility: hidden;
+       display: none;
+       @media (min-width: @screen-md-min) {
+           visibility: visible;
+           display: block;
+       }
+   }
+}
+
+#czego-potrzebujesz {
+    li { // kolorowe bullet pointy tylko dla duzych ekranow
+        @media (min-width: @screen-md-min) {
+            list-style: none;
+                text-indent: -2em;
+        }
+        
+        &:before {
+        @media (min-width: @screen-md-min) {
+        content: url(../img/bullet_green.png);
+        padding: 1em;
+        line-height: 2em;
+        position: relative;
+        top: 0.5em;
+        }
+        }
+        
+        &.indent {
+        @media (min-width: @screen-md-min) {
+            padding-left: 5em;
+        }
+        }
+    
+    }
+}
+
+#co-otrzymujesz {
+    li { // kolorowe bullet pointy tylko dla duzych ekranow
+        @media (min-width: @screen-md-min) {
+            list-style: none;
+            
+        }
+        
+        &:before {
+        @media (min-width: @screen-md-min) {
+        content: url(../img/bullet_orange.png);
+        padding: 1em;
+        line-height: 2em;
+        position: relative;
+        top: 0.5em;
+        }
+        }
+        
+        &.indent {
+        @media (min-width: @screen-md-min) {
+            padding-left: 5em;
+        }
+        }
+    
+    }
+}
+
+
+#zacznij {
+    background: url(../img/bokeh.jpg) no-repeat top center; // maly bokeh dla telefonow
+    @media (min-width: @screen-sm-min) {
+        background: url(../img/bokeh.jpg) no-repeat top center;
+        background-size: cover;
+    }
+}
+
+#o-nas {
+    @media (min-width: @screen-sm-min) {
+        background: url(../img/mapa.svg) no-repeat top center;
+        background-size: contain;
+    }
+    ul {
+        @media (min-width: @screen-sm-min) {
+            padding-left: 30%;
+            line-height: 2em;
+        }
+    }
+    
+}
+
+        
+        
+        
